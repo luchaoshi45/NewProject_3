@@ -10,7 +10,6 @@ export class Baxin extends Component {
     protected onLoad(): void {
         // 从节点当前的旋转角度初始化角度
         this.Angle = this.node.eulerAngles.z; // 假设节点的旋转在z轴
-        console.log(`Initial Angle: ${this.Angle}`); // 输出初始角度
     }
 
     protected onDestroy(): void {
@@ -18,7 +17,6 @@ export class Baxin extends Component {
     }
 
     start() {
-        console.log('Baxin component has started');
     }
 
     update(deltaTime: number) {
